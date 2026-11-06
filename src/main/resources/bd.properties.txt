@@ -1,0 +1,4 @@
+# Datos de conexión a la base de datos de Empleados y Nóminas (MariaDB)
+url=jdbc:mariadb://localhost:3306/nominas
+usuario=root
+clave=123

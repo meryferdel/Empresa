@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menú principal · Empresa</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="cabecera">
+        <a class="marca" href="./">Empresa · Gestión de empleados</a>
+    </header>
+
+    <main class="contenedor">
+        <h1>Menú principal</h1>
+        <p class="subtitulo">Elige una opción para consultar o modificar los datos de los empleados.</p>
+
+        <nav class="menu">
+            <a class="tarjeta" href="listar">
+                <span class="numero">1</span>
+                <span class="titulo-tarjeta">Mostrar empleados</span>
+                <span class="texto-tarjeta">Lista completa con nombre, DNI, sexo, categoría y años trabajados.</span>
+            </a>
+            <a class="tarjeta" href="jsp/formularioSalario.jsp">
+                <span class="numero">2</span>
+                <span class="titulo-tarjeta">Mostrar el salario de un empleado</span>
+                <span class="texto-tarjeta">Consulta el sueldo guardado a partir del DNI.</span>
+            </a>
+            <a class="tarjeta" href="jsp/formularioBusqueda.jsp">
+                <span class="numero">3</span>
+                <span class="titulo-tarjeta">Modificar los datos de un empleado</span>
+                <span class="texto-tarjeta">Busca por cualquier dato y edita el empleado. El sueldo se recalcula solo.</span>
+            </a>
+        </nav>
+
+        <div class="acciones">
+            <button type="button" class="boton secundario"
+                    onclick="if (history.length > 1) { history.back(); } else { location.href = './'; }">&larr; Volver</button>
+        </div>
+    </main>
+
+    <footer class="pie">Aplicación web de empleados y nóminas · Contexto /empresa</footer>
+</body>
+</html>

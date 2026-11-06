@@ -1,0 +1,11 @@
+<%-- Pie común: botón "Volver" (vuelve a la pantalla anterior), enlace al inicio y cierre de la página. --%>
+        <div class="acciones">
+            <button type="button" class="boton secundario"
+                    onclick="if (history.length > 1) { history.back(); } else { location.href = '${ctx}/'; }">&larr; Volver</button>
+            <a class="boton" href="${ctx}/">Menú principal</a>
+        </div>
+    </main>
+
+    <footer class="pie">Aplicación web de empleados y nóminas · Contexto /empresa</footer>
+</body>
+</html>
